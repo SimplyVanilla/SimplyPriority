@@ -1,0 +1,42 @@
+# Config for SimplyPriority
+
+
+# priorityPlayerPoolSize + normalPlayerPoolSize = total player limitation
+pool:
+  # Moderator -> Who have permission 'OP' The pool size can be 0
+  moderatorPlayerPoolSize: 1
+
+  priorityPlayerPoolSize: 1
+
+  # If that is true, every single player who have priority can login to server until reach to player limitation.
+  priorityPlayersCanUseNormalPlayerPool: true
+
+  normalPlayerPoolSize: 1
+
+  hideNormalPlayerPoolSizeOnMaxPlayerList: false
+  hidePriorityPlayerPoolSizeOnMaxPlayerList: false
+  hideModeratorPlayerPoolSizeOnMaxPlayerList: false
+
+
+messages:
+  poolIsFull: "You can't join right now, server is full!"
+  addedPriorityToPlayer: "Added priority to player [player_name]"
+  priorityRemovedFromPlayer: "Priority removed from [player_name]"
+  playerHavePriority: "Player called [player_name] have priority!"
+  playerDoesntHavePriority: "Player called [player_name] doesn't have priority!"
+
+  error:
+    anyPlayerCannotFound: "Any player cannot found!"
+    playerAlreadyHavePriority: "The player named [player_name] already have priority!"
+    playerDontHavePriority: "The player named [player_name] haven't priority!"
+
+
+
+permissions:
+  managePriorities: permission.managePriorities
+
+database:
+  url: jdbc:mysql://sql11.freesqldatabase.com:3306/sql11529327?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+  username: sql11529327
+  password: 12dtmG45lC
+  playerNameStorageTableName: player_priority5

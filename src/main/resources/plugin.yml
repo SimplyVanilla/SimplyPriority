@@ -1,0 +1,13 @@
+name: SimplyPriority
+version: '${version}'
+main: me.orbitium.SimplyPriority
+api-version: 1.19
+authors: [Orbit]
+depend:
+
+commands:
+  priority:
+    description: Reply directly to a private message.
+    usage: 'Usage: /<command> add/remove playername'
+    aliases:
+      - p
